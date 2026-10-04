@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-ledger"
+version = "0.1.0"
+description = "Separate evidence classes without collapsing them into one generic evidence type."
+requires-python = ">=3.10"
+
+[project.scripts]
+evidence-ledger = "evidence_ledger:main"
+
+[tool.setuptools]
+py-modules = ["evidence_ledger"]
