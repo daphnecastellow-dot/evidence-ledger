@@ -1,0 +1,20 @@
+flowchart LR
+  C001["C001 · A warning note existed before the North Reach disappearance."]
+  S001["S001 · 1904 station log"]
+  S002["S002 · 1978 folklore book"]
+  S003["S003 · 2025 folklore article"]
+  E001["E001 · documentary-record · The reviewed 1904 station log contains no warning note."]
+  S001 -->|source for| E001
+  E001 -->|contradicts| C001
+  E002["E002 · secondhand-report · The 1978 folklore book reports that a keeper left a final warning."]
+  S002 -->|source for| E002
+  E002 -->|supports| C001
+  E003["E003 · repetition · The 2025 article repeats the final-warning story from the folklore tradition."]
+  S003 -->|source for| E003
+  E002 -->|derived into| E003
+  E003 -->|supports| C001
+  E004["E004 · interpretation · The current source set gives the warning story a later attestation but no demonstrated contemporary provenance."]
+  E001 -->|derived into| E004
+  E002 -->|derived into| E004
+  E003 -->|derived into| E004
+  E004 -->|context| C001
